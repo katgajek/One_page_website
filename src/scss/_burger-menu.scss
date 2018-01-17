@@ -1,0 +1,75 @@
+.burger {
+  width: 40px;
+  height:40px;
+  background-color: #fff;
+  position: relative;
+  display: none;
+}
+
+.burger span{
+  height: 6px;
+  width: 100%;
+  background-color: $blueCol;
+  display: block;
+  position: absolute;
+}
+
+.burger span:first-child{
+  top: 0;
+  left: 0;
+}
+
+.burger span:nth-child(2) {
+    top:17px;
+    left:0;
+}
+
+.burger span:nth-child(3){
+  bottom:0;
+  left:0;
+}
+
+.active {
+  span:first-child{
+    animation: spanOne 1s forwards;
+  }
+
+  span:nth-child(2){
+    animation: spanTwo 1s forwards;
+  }
+
+  span:nth-child(3){
+    animation: spanThree 1s forwards;
+  }
+}
+
+@keyframes spanOne {
+  0%{transform:translateY(0px) rotate(0deg);}
+  50%{transform: translateY(17px) rotate(0deg);}
+  100%{transform: translateY(17px) rotate(135deg); background-color:$orangeColor;}
+}
+
+@keyframes spanTwo {
+  0%{transform: translate(0px) rotate(0deg);}
+  50%{background-color: transparent}
+  100%{background-color: transparent;}
+
+}
+
+@keyframes spanThree {
+0%{transform: translateY(0px) rotate(0deg);}
+  50%{transform: translateY(-17px) rotate(0deg);}
+  100%{transform: translateY(-17px) rotate(-135deg); background-color: $orangeColor;}
+}
+
+@media (max-width: 600px){
+  .burger{
+    display:block;
+    position: absolute;
+    top:20px;
+    right:20px;
+  }
+  .main-nav{
+    display:none;
+  }
+}

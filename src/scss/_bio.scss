@@ -1,0 +1,111 @@
+.bio{
+  min-height: 1300px;
+}
+
+
+.bio .section-title{
+  color: $mainColor;
+}
+
+.bio .row{
+  justify-content: center;
+  flex-wrap:wrap;
+  margin-bottom: 60px;
+}
+
+.bio .about-me{
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.about-me-picture{
+  text-align: center;
+}
+
+.about-me-info{
+
+ padding-top: 80px;
+ text-align: center;
+ margin:0 auto;
+ width: 70%;
+}
+
+.about-me-title{
+  padding-bottom: 30px;
+  font-size: 25px;
+  line-height: 35px;
+  position: relative;
+  &:after{
+    position: absolute;
+    top: 42px;
+    left:50%;
+    content: '';
+    width:350px;
+    height:2px;
+    background-color: $orangeColor;
+    transform: translateX(-50%);
+  }
+
+  &:before{
+    position: absolute;
+    content: '';
+    width:8px;
+    height:8px;
+    right: 50%;
+    top: 39px;
+    background-color: $orangeColor;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+.about-me-text{
+  line-height: 35px;
+  font-size: 17px;
+}
+
+.bio img {
+  width:260px;
+  height:260px;
+  border-radius: 50%;
+  box-shadow:
+          inset 0 0 0 0 rgba(200,95,66, 0.4),
+          inset 0 0 0 16px rgba(255,255,255,0.6),
+          0 1px 2px rgba(0,0,0,0.1);
+}
+
+.bio-box{
+  padding:20px 30px 20px 30px;
+  margin-right:17px;
+  margin-left:17px;
+  margin-bottom:34px;
+  width: 30%;
+  line-height: 30px;
+  box-shadow: 1px 4px 9px 0 #bababa;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.bio-box-title {
+  padding-bottom: 20px;
+  color: $mainColor;
+  font-weight: 500;
+}
+
+.bio-box-date{
+  padding-bottom: 5px;
+}
+
+@media (max-width:700px) {
+  .bio .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio-box{
+    width:80%;
+
+  }
+}

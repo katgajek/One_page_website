@@ -1,0 +1,72 @@
+.speeches{
+  min-height: 1100px;
+  background: $blueCol;
+
+}
+
+.speech{
+  opacity:0;
+  padding:20px 100px;
+  background-color: #fff;
+  margin: 40px 0;
+  font-size: 20px;
+  border-radius: 10px;
+  line-height: 30px;
+}
+
+.speeches-list{
+  padding:30px;
+}
+
+
+.speeches .section-title{
+  color:#fff;
+}
+
+.speech-place {
+  padding-bottom: 5px;
+  padding-top:10px;
+  font-weight: 600;
+}
+
+.speech-date{
+
+  color: $mainColor;
+  font-weight: 300;
+  padding-bottom: 20px;
+  position: relative;
+
+  &:after{
+    position: absolute;
+    top: 40px;
+    left: -5%;
+    content: '';
+    width:250px;
+    height:2px;
+    background-color: $orangeColor;
+
+  }
+
+  &:before{
+    position: absolute;
+    content: '';
+    width:8px;
+    height:8px;
+    left:-2%;
+    top: 37px;
+    background-color: $orangeColor;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 700px){
+  .speeches{
+    min-height: 1200px;
+  }
+  .speech{
+    padding: 20px 50px;
+  }
+}
+
+
+

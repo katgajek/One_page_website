@@ -1,0 +1,27 @@
+
+.main-hero {
+  height: 100vh;
+  background-image: url("../images/crm_pic.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+
+.main-header-list{
+  display: flex;
+  list-style: none;
+  padding:0;
+  margin-top:20px;
+}
+
+.social-icon{
+  margin-right:20px;
+
+  &:hover{
+    opacity:0.5;
+    transition:1s;
+  }
+}

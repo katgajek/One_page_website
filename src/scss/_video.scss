@@ -1,0 +1,26 @@
+.video{
+  min-height: 600px;
+}
+
+
+.video .row{
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+}
+
+.video .col-3{
+text-align: center;
+
+}
+
+@media (max-width:900px){
+
+  .video .row{
+    flex-direction: column;
+    margin-bottom:50px;
+    justify-content: center;
+    align-items: center;
+  }
+}
