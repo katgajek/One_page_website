@@ -1,3 +1,5 @@
-# Getting Started With Gulp
+Landing page
 
-Gulp example app for the tutorial
+Techniques I used:
+HTML5, CSS3, SASS, jQuery, Gulp
+
