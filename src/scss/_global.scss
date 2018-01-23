@@ -2,6 +2,7 @@
   font-family: 'Lato', sans-serif;
 }
 
+
 $mainColor: darkgray;
 $orangeColor: #e54d00;
 $blueCol: #000099;
@@ -12,6 +13,20 @@ $blueCol: #000099;
   color: $mainColor;
   font-weight: 500;
   font-size: 1.7em;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    width:0;
+    height:2px;
+    bottom:5px;
+    left:38%;
+    background-color: $orangeColor;
+    transition: all 0.4s ease-in-out;
+  }
+}
+.section-title:hover:before {
+  width: 25%;
 }
 
 .section-header{
@@ -22,10 +37,10 @@ $blueCol: #000099;
 // grid //
 
 $gap: 10px;
-$column: 10;
+$column: 12;
+
 .container{
-  max-width:100%;
-  width:1200px;
+  max-width:1200px;
   padding-left: $gap;
   padding-right: $gap;
   margin: 0 auto;

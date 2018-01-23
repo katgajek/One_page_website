@@ -1,7 +1,7 @@
 $(function(){
 
 
-    //page scroll
+    //page scroll - menu
 
 
     $(".main-nav a").on("click", function(e){
@@ -10,30 +10,53 @@ $(function(){
     const $a = $(this);
     const href = $a.attr("href");
     const $section = $(href);
-    console.log($section);
+
     $('html').animate({
         scrollTop: $section.offset().top
     },1000);
     });
 
-    $(window).scroll(function(){
 
+    //burger menu
+
+    function toggleSidebar(){
+        $(".burger").toggleClass("active");
+        $(".sidebar").toggleClass("activeItem");
+
+    }
+
+    $(".burger-menu").on("click tap", function() {
+        toggleSidebar();
+    })
+
+    $(".sidebar a").on("click tap", function(e){
+        e.preventDefault();
+
+        const $a = $(this);
+        const href = $a.attr("href");
+        const $section = $(href);
+
+        $('html').animate({
+            scrollTop: $section.offset().top,
+
+        },1000);
+
+
+    });
+
+    //box fadeIn
+
+    $(window).scroll(function(){
 
     $(".speech").each(function(i){
         const bottomOfItem = $(this).offset().top + $(this).outerHeight();
         const bottomOfWindow = $(window).scrollTop() + $(window).height();
 
         if(bottomOfWindow>bottomOfItem){
-            $(this).animate({opacity: '1'},1500);
+            $(this).animate({opacity: '1'},1000);
         }
     })
 
-    });
-
-    //burger menu
-
-    $('.burger').click(function(){
-        $(this).toggleClass('active');
     });
 
 

@@ -1,9 +1,13 @@
-.burger {
+.burger{
   width: 40px;
   height:40px;
-  background-color: #fff;
-  position: relative;
+  background-color: transparent;
+  position:relative;
+  top:10px;
+  right:0;
   display: none;
+  z-index:4;
+
 }
 
 .burger span{
@@ -12,21 +16,30 @@
   background-color: $blueCol;
   display: block;
   position: absolute;
+  border-radius: 10px;
 }
 
 .burger span:first-child{
   top: 0;
   left: 0;
+  animation:spanOneBack 0.8s backwards;
+  animation-direction:reverse;
 }
 
 .burger span:nth-child(2) {
-    top:17px;
-    left:0;
+  top:17px;
+  left:0;
+  animation:spanTwoBack 0.8s backwards;
+  animation-direction:reverse;
+
 }
 
 .burger span:nth-child(3){
   bottom:0;
   left:0;
+  animation:spanThreeBack 0.8s backwards;
+  animation-direction:reverse;
+
 }
 
 .active {
@@ -42,6 +55,7 @@
     animation: spanThree 1s forwards;
   }
 }
+
 
 @keyframes spanOne {
   0%{transform:translateY(0px) rotate(0deg);}
@@ -62,10 +76,29 @@
   100%{transform: translateY(-17px) rotate(-135deg); background-color: $orangeColor;}
 }
 
-@media (max-width: 600px){
+@keyframes spanOneBack{
+  0%{transform: translateY(0px) rotate(0deg);}
+  50%{transform: translateY(17px) rotate(0deg);}
+  100%{transform: translateY(17px) rotate(135deg);}
+}
+
+@keyframes spanThreeBack{
+  0%{transform: translateY(0px) rotate(0deg);}
+  50%{transform: translateY(-17px) rotate(0deg);}
+  100%{transform: translateY(-17px) rotate(-135deg);}
+}
+
+@keyframes spanTwoBack {
+  0%{transform: translate(0px) rotate(0deg);}
+  50%{background-color: transparent}
+  100%{background-color: transparent;}
+
+}
+
+@media (max-width: 800px){
   .burger{
     display:block;
-    position: absolute;
+    position: fixed;
     top:20px;
     right:20px;
   }
@@ -73,3 +106,65 @@
     display:none;
   }
 }
+
+// sidebar //
+
+.sidebar{
+  height:100%;
+  width: 250px;
+  position: fixed;
+  top:0;
+  right:0;
+  background-color: $blueCol;
+  opacity:1;
+  z-index:3;
+  display:none;
+  border-radius: 10px 0 0 10px;
+
+}
+
+.sidebar-list{
+  list-style: none;
+  margin-top:60px;
+  text-align: center;
+
+}
+
+.sidebar-item{
+  padding-bottom:20px;
+}
+
+.activeItem {
+  display:block;
+
+}
+
+.sidebar-anchor{
+  color: #fff;
+  text-decoration: none;
+  padding-bottom:7px;
+  font-size: 30px;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    width:0;
+    height:2px;
+    bottom:5px;
+    left:0;
+    background-color: $orangeColor;
+    transition: all 0.4s ease-in-out;
+  }
+
+}
+
+.sidebar-anchor:hover:before {
+  width: 100%;
+}
+
+
+
+
+
+
+

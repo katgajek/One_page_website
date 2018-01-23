@@ -60,11 +60,20 @@
 }
 
 @media (max-width: 700px){
-  .speeches{
-    min-height: 1200px;
-  }
   .speech{
-    padding: 20px 50px;
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 500px){
+  .speech{
+    padding: 20px 30px;
+  }
+  .speech-date{
+    &:after{
+      width:180px;
+      left:-7%;
+    }
   }
 }
 

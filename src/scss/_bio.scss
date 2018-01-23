@@ -1,5 +1,6 @@
 .bio{
   min-height: 1300px;
+  position:relative;
 }
 
 
@@ -20,6 +21,8 @@
 
 .about-me-picture{
   text-align: center;
+  position:relative;
+  z-index:2;
 }
 
 .about-me-info{
@@ -42,7 +45,7 @@
     content: '';
     width:350px;
     height:2px;
-    background-color: $orangeColor;
+    background-color: orangered;
     transform: translateX(-50%);
   }
 
@@ -69,10 +72,7 @@
   width:260px;
   height:260px;
   border-radius: 50%;
-  box-shadow:
-          inset 0 0 0 0 rgba(200,95,66, 0.4),
-          inset 0 0 0 16px rgba(255,255,255,0.6),
-          0 1px 2px rgba(0,0,0,0.1);
+
 }
 
 .bio-box{
@@ -82,9 +82,9 @@
   margin-bottom:34px;
   width: 30%;
   line-height: 30px;
-  box-shadow: 1px 4px 9px 0 #bababa;
   flex-grow: 1;
-  border-radius: 5px;
+  border-bottom:2px solid orangered;
+
 }
 
 .bio-box-title {
@@ -97,6 +97,7 @@
   padding-bottom: 5px;
 }
 
+
 @media (max-width:700px) {
   .bio .row {
     flex-direction: column;
@@ -107,5 +108,16 @@
   .bio-box{
     width:80%;
 
+  }
+}
+
+@media (max-width: 500px){
+  .about-me-info{
+    width:90%;
+  }
+  .about-me-title{
+    &:after{
+      width:250px;
+    }
   }
 }

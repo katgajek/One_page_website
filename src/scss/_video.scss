@@ -1,5 +1,6 @@
 .video{
   min-height: 600px;
+  background: #f9f9f9;
 }
 
 
@@ -10,7 +11,7 @@
 
 }
 
-.video .col-3{
+.video .col-4{
 text-align: center;
 
 }
@@ -19,8 +20,9 @@ text-align: center;
 
   .video .row{
     flex-direction: column;
-    margin-bottom:50px;
+
     justify-content: center;
     align-items: center;
+    padding-bottom:50px;
   }
 }
