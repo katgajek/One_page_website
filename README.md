@@ -1,3 +1,5 @@
-# Getting Started With Gulp
+The following project is a landing page made for a friend that he will use as a portfolio.
 
-Gulp example app for the tutorial
+Technologies I used:
+HTML5, CSS3, SASS, jQuery, Photoshop, Gulp.
+
