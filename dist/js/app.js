@@ -41,7 +41,6 @@ $(function(){
 
         },1000);
 
-
     });
 
     //box fadeIn
@@ -53,11 +52,33 @@ $(function(){
         const bottomOfWindow = $(window).scrollTop() + $(window).height();
 
         if(bottomOfWindow>bottomOfItem){
-            $(this).animate({opacity: '1'},1000);
+            $(this).addClass("active");
         }
     })
 
     });
+
+    //carousel
+
+    $('#carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots:true,
+        arrows:true,
+        responsive: [
+            {
+                breakpoint: 902,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }
+        ]
+    });
+
 
 
 });

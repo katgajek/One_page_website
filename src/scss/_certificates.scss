@@ -1,11 +1,12 @@
 .certificates{
   min-height: 600px;
+  padding:100px 0;
 }
 
 .certificates .row{
 
   margin-top: 60px;
-  padding-bottom:120px;
+  margin-bottom: 60px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -41,6 +42,7 @@
   align-items: center;
   text-align: center;
 }
+
 .card-front-text{
   padding:20px;
   font-weight: 700;

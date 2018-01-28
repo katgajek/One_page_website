@@ -13,7 +13,7 @@
 .burger span{
   height: 6px;
   width: 100%;
-  background-color: $blueCol;
+  background-color: $orangeColor;
   display: block;
   position: absolute;
   border-radius: 10px;
@@ -60,7 +60,7 @@
 @keyframes spanOne {
   0%{transform:translateY(0px) rotate(0deg);}
   50%{transform: translateY(17px) rotate(0deg);}
-  100%{transform: translateY(17px) rotate(135deg); background-color:$orangeColor;}
+  100%{transform: translateY(17px) rotate(135deg); background-color:#fff;}
 }
 
 @keyframes spanTwo {
@@ -73,7 +73,7 @@
 @keyframes spanThree {
 0%{transform: translateY(0px) rotate(0deg);}
   50%{transform: translateY(-17px) rotate(0deg);}
-  100%{transform: translateY(-17px) rotate(-135deg); background-color: $orangeColor;}
+  100%{transform: translateY(-17px) rotate(-135deg); background-color: #fff;}
 }
 
 @keyframes spanOneBack{
