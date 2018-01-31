@@ -45,7 +45,7 @@
     content: '';
     width:350px;
     height:2px;
-    background-color: orangered;
+    background-color: $orangeColor;
     transform: translateX(-50%);
   }
 
@@ -96,7 +96,6 @@
     background-color: $orangeColor;
     border-radius: 50%;
     transform: translateX(50%);
-    //z-index:2;
 
   }
   &:before{
@@ -107,7 +106,6 @@
     right: 50%;
     bottom: -25px;
     background-color: #fff;
-    //z-index:1;
     transform: translateX(50%);
   }
 
@@ -124,7 +122,7 @@
 }
 
 
-@media (max-width:700px) {
+@media (max-width:800px) {
   .bio.row {
     flex-direction: column;
     justify-content: center;

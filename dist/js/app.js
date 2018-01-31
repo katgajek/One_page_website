@@ -1,5 +1,10 @@
 $(function(){
 
+    //main-hero fadeIn
+
+    $('.main-hero').animate({
+        opacity:1},3000
+    );
 
     //page scroll - menu
 
@@ -79,6 +84,6 @@ $(function(){
         ]
     });
 
-
+    //
 
 });

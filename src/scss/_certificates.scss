@@ -26,7 +26,6 @@
   box-shadow: 0 30px 30px rgba(0,0,0, 0.5);
   border-radius: 20px;
   flex-grow:1;
-
 }
 
 
@@ -48,6 +47,7 @@
   font-weight: 700;
   color: $blueCol;
   position: relative;
+
 
   &:before{
     position: absolute;
@@ -94,6 +94,8 @@
   transform: rotateY(180deg);
 }
 
+
+
 @media (max-width: 550px){
   .cert-card {
     width: 170px;
@@ -104,7 +106,6 @@
     font-size: 15px;
     line-height: 30px;
   }
-
-
 }
+
 

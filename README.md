@@ -1,7 +1,7 @@
-Landing page
+# Landing page
 version 0.7
 
-Prerequisites
+# Prerequisites
 You will need the following things properly installed on your computer:
 
 - Git
@@ -9,7 +9,7 @@ You will need the following things properly installed on your computer:
 - npm
 - node.js
 
-Instalation
+# Instalation
 - git clone this repository
 - go inside project directory
 - npm install
