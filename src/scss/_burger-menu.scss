@@ -95,7 +95,7 @@
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 1430px){
   .burger{
     display:block;
     position: fixed;
@@ -120,6 +120,7 @@
   z-index:3;
   display:none;
   border-radius: 10px 0 0 10px;
+  border-left:3px solid $orangeColor;
 
 }
 

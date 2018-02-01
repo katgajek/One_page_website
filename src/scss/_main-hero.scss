@@ -29,3 +29,21 @@
     transition:1s;
   }
 }
+
+@media (max-width:1000px){
+  .main-hero{
+    height:500px;
+  }
+}
+
+@media (max-width:700px){
+  .main-hero{
+    height:370px;
+  }
+}
+
+@media (max-width:500px){
+  .main-hero{
+    height:270px;
+  }
+}

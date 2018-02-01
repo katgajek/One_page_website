@@ -1,111 +1,53 @@
 .certificates{
-  min-height: 600px;
+  min-height:700px;
+  background: #fff;
   padding:100px 0;
 }
 
 .certificates .row{
-
-  margin-top: 60px;
-  margin-bottom: 60px;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 60px;
+}
+
+.cert{
+  width:300px;
+  height:150px;
+  position:relative;
+  padding:20px;
+  line-height: 30px;
+  font-size:20px;
+  background: $blueCol;
+  color:white;
+  border-radius: 10px;
+  flex-grow: 1;
+  display:flex;
+  align-items: center;
+}
+
+i{
+  color: $orangeColor;
+  font-size:26px;
 }
 
 .cert-box{
-  perspective: 500px;
-  margin:15px;
+  padding:40px;
+  margin:0;
 }
 
-.cert-card{
-  position: relative;
-  width:250px;
-  height:250px;
-  background: #fff;
-  transform-style: preserve-3d;
-  transition: 1.5s ease;
-  box-shadow: 0 30px 30px rgba(0,0,0, 0.5);
-  border-radius: 20px;
-  flex-grow:1;
-}
-
-
-.cert-card-back, .cert-card-front {
+.certBtn {
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  top:10px;
+  left:270px;
 }
 
-.card-front-text{
-  padding:20px;
-  font-weight: 700;
-  color: $blueCol;
-  position: relative;
-
-
-  &:before{
-    position: absolute;
-    content: '';
-    width:8px;
-    height:8px;
-    left:50%;
-    top: 60px;
-    background-color: $orangeColor;
-    border-radius: 50%;
-    transform: translateX(-50%);
-  }
-
-  &:after{
-    position: absolute;
-    top: 63px;
-    left: 26%;
-    content: '';
-    width:50%;
-    height:2px;
-    background-color: $orangeColor;
-
-  }
-}
-
-
-.card-back-text {
-  padding: 20px;
+.hiddenCert{
+  padding-top:20px;
+  width:300px;
+  height:60px;
+  background: #fff;
+  display:none;
   font-size: 20px;
-  line-height: 35px;
-  color: #e7e7e7;
-  font-weight: 600;
-  background: $blueCol;
-  height: 70%;
 }
-
-
-.cert-box:hover .cert-card{
-  transform: rotateY(180deg);
-}
-
-
-.cert-card-back{
-  transform: rotateY(180deg);
-}
-
-
-
-@media (max-width: 550px){
-  .cert-card {
-    width: 170px;
-    height: 170px;
-  }
-
-  .card-back-text{
-    font-size: 15px;
-    line-height: 30px;
-  }
-}
-
-

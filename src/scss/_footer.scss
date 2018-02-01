@@ -3,11 +3,11 @@
   text-align:center;
   background-color: $blueCol;
   color: #fff;
-  padding:100px 0;
+  padding:100px 0 50px 0;
   font-weight:300;
 }
 
-.row{
+.main-footer .row{
   display:flex;
   text-align: left;
 }
@@ -50,6 +50,8 @@ input{
   padding: 6px 36px;
   border:none;
   margin:10px 0;
+  width:100%;
+  max-width:240px;
 }
 
 input[type="submit"]{
@@ -64,8 +66,9 @@ textarea{
   font-family: 'Lato', sans-serif;
   padding: 6px 30px;
   font-weight:200;
-  width:400px;
+  max-width:370px;
   min-height:120px;
+  width:100%;
 }
 
 .copyright{
@@ -77,5 +80,11 @@ textarea{
     flex-direction: column;
 
     align-items:center;
+  }
+}
+
+@media (max-width: 500px){
+  textarea, input{
+    max-width:100%;
   }
 }
