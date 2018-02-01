@@ -15,7 +15,7 @@ You will need the following things properly installed on your computer:
 - npm install
 - gulp
 
-What this is about?
+# What this is about?
 
 The following project is a landing page made for a friend that he will use as a portfolio.
 I still need to work on some elements but you can already see most of my project. 
