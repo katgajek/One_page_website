@@ -24,6 +24,7 @@ $blueCol: #086163;
     transition: all 0.4s ease-in-out;
   }
 }
+
 .section-title:hover:before {
   width: 25%;
 }
@@ -48,20 +49,15 @@ $column: 12;
   margin-right: -$gap;
   display:flex;
 
-
-
   [class*="col-"] {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 2*$gap;
   }
 
-    @for $i from 1 through $column {
-      .col-#{$i} {
-        width: ((100/$column)*$i) *1%;
-      }
-
+  @for $i from 1 through $column {
+    .col-#{$i} {
+      width: ((100/$column)*$i) *1%;
     }
-
   }
-
+}

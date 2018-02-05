@@ -15,10 +15,6 @@
   transform: translateY(100px);
 }
 
-.speeches-list{
-  padding:30px;
-}
-
 .speech.active {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -116,6 +112,10 @@
       left:-7%;
     }
   }
+  .speeches{
+    padding:40px 0;
+  }
+
 }
 
 

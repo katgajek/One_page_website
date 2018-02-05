@@ -11,7 +11,7 @@
 .bio .row{
   justify-content: center;
   flex-wrap:wrap;
-  margin-bottom: 60px;
+
 }
 
 .bio .about-me{
@@ -143,5 +143,9 @@
     &:after{
       width:250px;
     }
+  }
+
+  .bio{
+    padding:40px 0;
   }
 }

@@ -57,6 +57,7 @@ input{
 input[type="submit"]{
   background-color:$orangeColor;
   cursor: pointer;
+  max-width: 120px;
 }
 
 textarea{
@@ -86,5 +87,8 @@ textarea{
 @media (max-width: 500px){
   textarea, input{
     max-width:100%;
+  }
+  .main-footer{
+    padding:40px 0;
   }
 }
