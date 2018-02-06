@@ -1,5 +1,5 @@
 .video{
-  max-height: 800px;
+  height: 900px;
   background: #f9f9f9;
   padding:100px 0;
 }
@@ -84,7 +84,7 @@
 }
 
 .slick-dots{
-  bottom: -28px;
+  bottom: -58px;
 }
 
 .slick-dotted.slick-slider {
@@ -106,13 +106,14 @@
 
 @media (max-width: 500px){
   .video{
+    height:700px;
     padding: 40px 0;
   }
   .video .row{
     padding-top:50px;
   }
   .slick-dots{
-    bottom: 0px;
+    bottom: 0;
   }
 }
 

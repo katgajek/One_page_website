@@ -24,15 +24,33 @@ $(function(){
 
     //burger menu
 
-    function toggleSidebar(){
-        $(".burger").toggleClass("active");
-        $(".sidebar").toggleClass("activeItem");
+    const $menu = $(".sidebar");
+    const $burger = $(".burger");
+    var menuOpen;
 
+    function openMenu(){
+        $menu.css("right", "0");
+        menuOpen = true;
     }
 
-    $(".burger-menu").on("click tap", function() {
+    function closeMenu(){
+        $menu.css("right", "-320px");
+        menuOpen = false;
+    }
+
+    function toggleSidebar(){
+        $burger.toggleClass("active");
+
+        if (menuOpen) {
+            closeMenu();
+        }else{
+            openMenu();
+        }
+    }
+
+    $burger.on("click tap", function() {
         toggleSidebar();
-    })
+    });
 
     $(".sidebar a").on("click tap", function(e){
         e.preventDefault();
@@ -41,11 +59,18 @@ $(function(){
         const href = $a.attr("href");
         const $section = $(href);
 
-        $('html').animate({
+        $('html, body').animate({
             scrollTop: $section.offset().top,
 
         },1000);
 
+        $burger.removeClass("active");
+
+        if (menuOpen) {
+            closeMenu();
+        }else{
+            openMenu();
+        }
     });
 
     //box fadeIn
@@ -60,17 +85,17 @@ $(function(){
             $(this).addClass("active");
         }
     })
-
     });
 
     //carousel
+
 
     $('#carousel').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        dots:true,
-        arrows:true,
+        dots: true,
+        arrows: true,
         responsive: [
             {
                 breakpoint: 902,
@@ -90,8 +115,6 @@ $(function(){
 
     $certBtn.on("click tap", function(){
            $(this).parent().next().slideToggle(500);
-
-
     })
 
 });

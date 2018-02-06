@@ -113,14 +113,14 @@
   height:100%;
   width: 250px;
   position: fixed;
+  right: -320px;
   top:0;
-  right:0;
-  background-color: $blueCol;
+  transition: right .7s;
+  background-color: #d3971f;
   opacity:1;
   z-index:3;
-  display:none;
+  display: block;
   border-radius: 10px 0 0 10px;
-  border-left:3px solid $orangeColor;
 
 }
 
@@ -151,9 +151,9 @@
     position: absolute;
     width:0;
     height:2px;
-    bottom:5px;
+    bottom:3px;
     left:0;
-    background-color: $orangeColor;
+    background-color: $blueCol;
     transition: all 0.4s ease-in-out;
   }
 
