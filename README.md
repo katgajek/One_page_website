@@ -24,5 +24,8 @@ Apart from the coding side, I designed the website too.
 Technologies I used:
 HTML5, CSS3, SASS, jQuery, Photoshop, Gulp.
 
+# You can see the result here:
+https://katgajek.github.io/Kamil_Kubiczek_page/
+
 
 
