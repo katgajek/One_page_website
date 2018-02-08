@@ -12,6 +12,10 @@
   text-align: left;
 }
 
+.col-6{
+  padding:50px;
+}
+
 .footer-contact-title{
   font-weight:200;
   padding:20px 20px 20px 0;
@@ -23,7 +27,7 @@
   font-weight:300;
   padding:0 20px 20px 0;
   list-style: none;
-  font-size:20px;
+  font-size:17px;
 }
 
 .footer-email{
@@ -36,10 +40,23 @@
   font-size: 30px;
 }
 
-.col-6{
-  padding:50px;
+.social-icon-list{
+  display: flex;
+  list-style: none;
 }
-form{
+
+.social-icon{
+  margin-right:20px;
+
+  &:hover{
+    opacity:0.5;
+    transition:1s;
+  }
+}
+
+// form //
+
+.contact-form{
   padding-bottom:80px;
 }
 
@@ -55,12 +72,14 @@ input{
   margin:10px 0;
   width:100%;
   max-width:240px;
+
 }
 
 input[type="submit"]{
   background-color:$orangeColor;
   cursor: pointer;
   max-width: 120px;
+  appearance: none;
 }
 
 textarea{
