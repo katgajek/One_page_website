@@ -22,7 +22,7 @@ I still need to work on some elements but you can already see most of my project
 Apart from the coding side, I designed the website too.
 
 Technologies I used:
-HTML5, CSS3, SASS, jQuery, Photoshop, Gulp.
+HTML5, CSS3, SASS, jQuery, Gimp, Gulp.
 
 # You can see the result here:
 https://katgajek.github.io/Kamil_Kubiczek_page/
