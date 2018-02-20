@@ -12,9 +12,9 @@
   text-align: left;
 }
 
-.col-6{
-  padding:50px;
-}
+//.col-6{
+//  padding:5px;
+//}
 
 .footer-contact-title{
   font-weight:200;
@@ -67,18 +67,19 @@ label{
 input{
   display:block;
   border-radius: 3px;
-  padding: 6px 36px;
+  padding: 10px 36px;
   border:none;
   margin:10px 0;
   width:100%;
-  max-width:240px;
+  max-width:300px;
+  font-size: 17px;
 
 }
 
 input[type="submit"]{
   background-color:$orangeColor;
   cursor: pointer;
-  max-width: 120px;
+  max-width: 150px;
   appearance: none;
 }
 
@@ -90,8 +91,9 @@ textarea{
   padding: 6px 30px;
   font-weight:200;
   max-width:370px;
-  min-height:120px;
+  min-height:150px;
   width:100%;
+  font-size: 17px;
 }
 
 .copyright{
