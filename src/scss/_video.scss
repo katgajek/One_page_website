@@ -4,7 +4,6 @@
   padding:100px 0;
 }
 
-
 .video .row{
   padding-top:100px;
   display:block;
@@ -38,16 +37,6 @@
   opacity:0;
   background: $blueCol;
   transition: 0.5s all;
-  &:after{
-    position: absolute;
-    top:50%;
-    left:50%;
-    width:170px;
-    height:60px;
-    border-bottom:1px solid white;
-    content:'';
-    transform: translate(-50%);
-  }
 }
 
 .box-photo:hover .box-photo-overlay {
@@ -55,6 +44,11 @@
   top:0;
 }
 
+.box-photo-overlay-text{
+  margin-top:200px;
+  color: #fff;
+  font-weight: 300;
+}
 
 .box-photo img {
   display: block;
